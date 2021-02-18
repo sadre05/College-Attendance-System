@@ -1,0 +1,4 @@
+.bodybg1{
+    -fx-background-image: url('green.jpg');
+    -fx-background-size: 100% 100%;
+}

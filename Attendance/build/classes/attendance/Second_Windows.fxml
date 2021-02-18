@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="720.0" styleClass="bodybg1" stylesheets="@styleOfEdu.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.Second_WindowsController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="9.0" prefHeight="29.0" prefWidth="196.0" styleClass="button1" stylesheets="@button.css" text="STUDENT DETAILS" textFill="#2c21ff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="idOfTable_View" layoutX="1.0" layoutY="113.0" onSort="#actionExitUiTwo" prefHeight="455.0" prefWidth="719.0" styleClass="bodybg1" stylesheets="@styleOfEdu.css">
+        <columns>
+          <TableColumn fx:id="idOf_Roll_No" editable="false" prefWidth="75.0" sortType="DESCENDING" text="Roll No" />
+          <TableColumn fx:id="idOf_Name_Strudet" prefWidth="303.0" text="Name of Strudent" />
+            <TableColumn fx:id="idOf_Gender" prefWidth="110.0" text="Gender" />
+            <TableColumn fx:id="id_Of_Department" editable="false" prefWidth="142.0" sortType="DESCENDING" text="Department" />
+            <TableColumn fx:id="id_Of_Present_and_Absent" editable="false" prefWidth="88.0" sortType="DESCENDING" text="P/A" />
+        </columns>
+      </TableView>
+      <Button fx:id="idOfSubmit_BTN" layoutX="285.0" layoutY="572.0" mnemonicParsing="false" onAction="#actionOnSubmit_BTN" prefHeight="39.0" prefWidth="149.0" styleClass="button1" stylesheets="@button.css" text="SUBMIT" textFill="#2c21ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="61.0" prefHeight="23.0" prefWidth="106.0" styleClass="button1" stylesheets="@button.css" text="Teacher Name :" textFill="#2c21ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idOfTextFieldOfTeacherName" alignment="CENTER" layoutX="116.0" layoutY="60.0" prefHeight="29.0" prefWidth="176.0" promptText="Enter Your Name" stylesheets="@button.css" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="61.0" prefHeight="23.0" prefWidth="106.0" styleClass="button1" stylesheets="@button.css" text="Subject ID :" textFill="#2c21ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idOfSubject_ID" alignment="CENTER" layoutX="538.0" layoutY="61.0" prefHeight="29.0" prefWidth="176.0" promptText="Enter Subject ID" />
+      <Button fx:id="idOfSubmit_BTN1" layoutX="643.0" layoutY="595.0" mnemonicParsing="false" onAction="#actionExitUiTwo" prefHeight="21.0" prefWidth="77.0" styleClass="button1" stylesheets="@button.css" text="EXIT" textFill="#2c21ff">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
